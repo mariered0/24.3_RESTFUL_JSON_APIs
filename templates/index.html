@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cupcakes</title>
+    <link rel="stylesheet" href="static/app.css">
+</head>
+
+<body>
+    <div id="container">
+        <div id="list-container"></div>
+        <h1>Cupcake List</h1>
+        
+        <ul id="cupcake-list">
+        </ul>
+
+        <div id="form-container">
+            <form id="cupcake-form">
+                <div>
+                    <label for="flavor">Flavor: </label>
+                    <input type="text" name="flavor" id="flavor" required>
+                </div>
+                <div>
+                    <label for="size">Size: </label>
+                    <input type="text" name="size" id="size" required>
+                </div>
+                <div>
+                    <label for="image">Image URL: </label>
+                    <input type="text" name="image" id="image">
+                </div>
+                <div>
+                    <label for="rating">Rating: </label>
+                    <input type="number" min="1" max="10" name="rating" id="rating" required>
+                </div>
+                <input type="submit" value="Submit" id="submit-btn">
+            </form>
+        </div>
+
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"
+        integrity="sha256-T/f7Sju1ZfNNfBh7skWn0idlCBcI3RwdLSS4/I7NQKQ=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="static/app.js"></script>
+</body>
+
+</html>
